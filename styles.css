@@ -39,3 +39,38 @@ body {
     z-index: 100;
     filter: drop-shadow(0 0 35px var(--clr)); 
 }
+.container .cloud h2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    color: #000;
+    font-size: 2em;
+    z-index: 1000;
+    font-weight: 400;
+    padding: 0 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background: var(--clr);
+}
+.container .cloud h2::before{ 
+    content: '';
+    position: absolute;
+    top: -115px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100px;
+    width: 125%;
+    height: 100px;
+    background: var(--clr);
+}
+.container .cloud h2::after{ 
+    position: absolute;
+    top: -140px; 
+    left: 25px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--clr); 
+    box-shadow: 110px -30px 0 40px var(--clr); 
+}
