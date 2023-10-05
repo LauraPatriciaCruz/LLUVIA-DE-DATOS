@@ -65,6 +65,7 @@ body {
     background: var(--clr);
 }
 .container .cloud h2::after{ 
+    content:'';
     position: absolute;
     top: -140px; 
     left: 25px;
